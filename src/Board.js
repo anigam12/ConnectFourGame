@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import {checkWinner, checkMatch} from './Findwinner.js'
@@ -104,18 +103,18 @@ class Board extends Component {
 
     return (
       <div>
-        {this.state.gameSelected &&
+      
           <div className="Board">
             {tiles}
           </div>
-        }
+      
         <div className={result}>{this.state.winner}</div>
-        {(!this.state.gameSelected || this.state.winner !== '') &&
+        
           <div>
             <button onClick={() => this.selectedGame('human')}>Play Human</button>
             <button onClick={() => this.selectedGame('ai')}>Play AI</button>
           </div>
-        }
+      
       </div>
     )
   }
