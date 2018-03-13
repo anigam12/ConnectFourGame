@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 80px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Game {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+   
+    background-color: blue;
+    border: 1px solid blue;
+ 
+     display: inline-block;
+    color: black;
+    font-size: 12pt;
+    padding: 7px 28px;
+    text-decoration: none;
+    margin: 5px;
+    
+    max-width: 160px;
+    min-width: 160px;
+}
+
+
+.Board {
+  display: flex;
+}
+
+
+.Hole {
+  /* padding: 5px; */
+  margin: 1px;
+  min-width: 30px;
+  min-height: 30px;
+  border: 1px solid black;
+}
+
+.Hole div {
+  position: relative;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 4px;
+  top: -400px;
+ 
+}
+
+.Red {
+  background-color: #FF456C;
+  transform: translateY(400px);
+}
+
+.Blue {
+  background-color: #2CC5FF;
+  transform: translateY(400px);
+}
+
+.result {
+  margin: 20px;
+  font-size: 0pt;
+  font: 12pt;
+  opacity: 0;
+}
+
+.appear {
+  opacity: 1;
+  font-size: 20pt;
+}
+
+
